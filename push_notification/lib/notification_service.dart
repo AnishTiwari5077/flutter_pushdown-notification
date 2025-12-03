@@ -5,7 +5,7 @@ class NotificationService {
   static final FlutterLocalNotificationsPlugin _notificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
-  // Call this once in main()
+  
   static Future<void> initialize() async {
     const androidSettings = AndroidInitializationSettings(
       '@mipmap/ic_launcher',
@@ -16,7 +16,6 @@ class NotificationService {
 
     await _notificationsPlugin.initialize(initializationSettings);
 
-    // Create Android notification channel
     const AndroidNotificationChannel channel = AndroidNotificationChannel(
       'simple_channel',
       'Simple Notifications',
@@ -30,7 +29,7 @@ class NotificationService {
         ?.createNotificationChannel(channel);
   }
 
-  // Show simple notification
+ 
   static Future<void> showSimulatedNotification(
     String title,
     String body,
