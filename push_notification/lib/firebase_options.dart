@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBljITeE3i38w3zgVxlDYKqHH_sFRsNN60',
-    appId: '1:751729398134:android:35caff68313cd171e7ea57',
-    messagingSenderId: '751729398134',
-    projectId: 'pushdown',
-    storageBucket: 'pushdown.firebasestorage.app',
+    apiKey: 'your api key',
+    appId: 'your api key',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBZVk1Ycp6xbRyBqY5smNy2J-wGTYAqhiQ',
-    appId: '1:751729398134:ios:e27e11c0482bd2dbe7ea57',
-    messagingSenderId: '751729398134',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
     projectId: 'pushdown',
-    storageBucket: 'pushdown.firebasestorage.app',
-    iosBundleId: 'com.example.pushNotification',
+    storageBucket: '',
+    iosBundleId: '',
   );
 }
